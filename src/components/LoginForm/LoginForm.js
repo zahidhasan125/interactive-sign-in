@@ -36,7 +36,7 @@ const LoginForm = () => {
     return (
         <div className='flex'>
 
-            <div className=' md:w-1/2 w-full px-6 md:pt-28 flex items-center justify-center flex-col'>
+            <div className='w-full px-6 md:pt-28 flex items-center justify-center flex-col'>
                 {/* Login Form */}
                 <div className='w-full max-w-[350px]'>
                     <h2 className='text-3xl font-bold'> Welcome to <br /> Systempackage</h2>
@@ -68,6 +68,7 @@ const LoginForm = () => {
                                     message: 'Please input valid username!',
                                 },
                             ]}
+                            className="bg-white"
                         >
                             <Input
                                 addonAfter={suffixSelector}
@@ -90,7 +91,8 @@ const LoginForm = () => {
                             ]}
                         >
                             <Input.Password
-                                size='large' />
+                                size='large'
+                            />
                         </Form.Item>
 
                         <Form.Item
@@ -114,12 +116,10 @@ const LoginForm = () => {
                             </Link>
                         </Form.Item>
                     </Form>
-                    <p className='text-md text-center'>Forgot your password?</p>
+                    <Link>
+                        <p className='text-md text-center text-blue-500'>Forgot your password?</p>
+                    </Link>
                 </div>
-            </div>
-            <div className='hidden md:flex'>
-                {/* Cards  */}
-                cards here
             </div>
         </div>
     );

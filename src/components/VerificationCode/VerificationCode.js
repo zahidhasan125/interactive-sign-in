@@ -1,5 +1,6 @@
 import { Button, Form, InputNumber } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const VerificationCode = () => {
 
@@ -19,9 +20,9 @@ const VerificationCode = () => {
 
     }
     return (
-        <div className='flex'>
+        <div className=''>
 
-            <div className=' md:w-1/2 w-full px-6 md:pt-28 flex items-center justify-center flex-col'>
+            <div className=' w-full px-6 md:pt-28 flex items-center justify-center flex-col'>
                 {/* Login Form */}
                 <div className='w-full max-w-[350px]'>
                     <h2 className='text-3xl font-bold'> Enter the verification <br /> code to continue</h2>
@@ -126,11 +127,12 @@ const VerificationCode = () => {
                             }}
                         >
                             <Button
-                                type="primary"
-                                className={`bg-[#0858F7] w-full flex items-center justify-center`}
+                                type="link"
+                                className={`font-bold w-full flex items-center justify-between`}
                                 htmlType="submit"
                             >
-                                Submit
+                               <Link to='/'> Back</Link>
+                                <p className='text-gray-400'>Resend 00:30</p>
                             </Button>
                         </Form.Item>
                     </Form>
