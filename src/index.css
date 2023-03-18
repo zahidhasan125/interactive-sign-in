@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.ant-input-number-handler-wrap { 
+  visibility: hidden;
+}
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

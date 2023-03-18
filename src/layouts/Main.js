@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
-        <div>
+        <div className='max-w-[1280px] mx-auto min-h-screen'>
             <Outlet />
         </div>
     );
